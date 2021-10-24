@@ -8,7 +8,7 @@ objects = [];
 
 //load image
 function preload(){
-    img = loadImage("Cups.jpg");
+    img = loadImage("Television.jpg");
 }
 
 function setup(){
@@ -45,14 +45,14 @@ function draw(){
             percent = floor(objects[i].confidence * 100);
 
             //set the text color
-            fill("#00008b");
+            fill("#FF0000");
             //display the label
             text(objects[i].label + " " + percent + "%" , objects[i].x + 15 , objects[i].y + 15);
 
             //unset the color
             noFill();
             //set the border color
-            stroke("#00008b");
+            stroke("#FF0000");
 
             //draw a rectangle around the detected object
             rect(objects[i].x , objects[i].y , objects[i].width , objects[i].height);

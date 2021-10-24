@@ -8,7 +8,7 @@ objects = [];
 
 //load image
 function preload(){
-    img = loadImage("Cups.jpg");
+    img = loadImage("Water bottles.jpg");
 }
 
 function setup(){
